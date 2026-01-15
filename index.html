@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="home.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="home.html"><img src="images/Gemini_Generated_Image_4v5fql4v5fql4v5f-removebg-preview.png" alt="Logo"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Owen Maake</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="intro">
+            <span>Hi there</span><br>
+            <span>I am Owen Maake</span><br>
+            <span>A junior Full Stack Web Developer</span>
+        </div>
+        <br>
+        <div class="hire">
+            <button onclick="location.href='mailto:owenlethabo28@gmail.com';">Hire Me </button>
+            <button onclick="location.href='cv/cv.pdf';">Download CV </button>
+        </div>
+        <br>
+
+        <div class="about">
+            <span><a href="">About Me</a></span>
+            <h5>A highly motivated and results-driven final-year student in Information Technology and Computer Sciences,
+                awaiting degree conferral. Possesses a strong academic foundation and a proactive mindset, with a deep-seated passion
+                for building robust digital solutions and safeguarding them.
+                My technical focus lies at the intersection of full-stack development and cybersecurity principles, allowing me to engineer 
+                applications with security considerations from the ground up. I am adept at problem-solving across the technology stack, 
+                from designing intuitive front-end interfaces to developing scalable back-end systems and implementing foundational security measures.
+                I am particularly energized by emerging technologies such as cloud-native architectures, AI integration, and blockchain, and continuously 
+                explore their practical applications through personal projects and coursework. Eager to contribute my technical skills in IT security, web development, 
+                and analytical troubleshooting to a collaborative, innovative team.
+                Ultimately, I am seeking a dynamic role where I can drive meaningful impact, contribute to challenging projects from day one, and accelerate 
+                my professional growth within a fast-paced technology environment. I am committed to lifelong learning and poised to quickly adapt and add value to your organization.
+            </h5>
+        </div>
+        <br>
+        <div class="certificates">
+            <span style="width: 100%;"><a href="">Certificates</a></span><br>
+            <br>
+            
+            <div class="certificate-item">
+                <a href=""><img src="images/certificates/Gemini_Generated_Image_bzo3lvbzo3lvbzo3.png" alt=""></a>
+                <h6>Introduction to cybersecurity</h6>
+            </div>
+
+            <div class="certificate-item">
+                <a href=""><img src="images/certificates/endpoint-security.png" alt=""></a>
+                <h6>Cisco Endpoint Security</h6>
+            </div> 
+
+            <div class="certificate-item">
+            <a href=""><img src="images/certificates/Gemini_Generated_Image_dxrwj9dxrwj9dxrw.png" alt=""></a>
+                <h6>Cisco Ethical Hacker</h6>
+            </div> 
+
+            <div class="certificate-item">
+                <a href=""><img src="images/certificates/Gemini_Generated_Image_mkkwcpmkkwcpmkkw.png" alt=""></a>
+                <h6>Fnb Academy front-end</h6>
+            </div>
+
+             <div class="certificate-item">
+                <a href=""><img src="images/certificates/Gemini_Generated_Image_mkkwcpmkkwcpmkkw.png" alt=""></a>
+                <h6>Fnb Academy Back-end</h6>
+            </div>
+        </div>
+        <br>
+        
+        <div class="projects">
+            <span style="width: 100%;"><a href="">Projects</a></span>
+            <br>
+            <div class="projects-item">
+                <a href="https://owen23-ux.github.io/First-calculator/"><img src="images/projects/recha-oktaviani-h2aDKwigQeA-unsplash.jpg" alt=""></a>
+                <h6>Calculator App</h6>
+            </div>
+             <div class="projects-item">
+                <a href=""><img src="images/projects/abid-shah-sff8Ow-YiWY-unsplash.jpg" alt=""></a>
+                <h6>Weather App</h6>
+            </div>
+             <div class="projects-item">
+                <a href=""><img src="images/projects/souvik-banerjee-E6Yg8ACZ2vw-unsplash.jpg" alt=""></a>
+                <h6>Instagram Clone</h6>
+            </div>  
+             <div class="projects-item">
+                <a href=""><img src="images/projects/dima-solomin-sOU09hnONrQ-unsplash.jpg" alt=""></a>
+                <h6>Netflix Clone</h6>
+            </div>          
+        </div>
+
+         <br>
+        <div class="links">
+            <span style="width: 100%;"><a href="">Social's</a></span><br>
+
+            <div class="links-item">
+                <a href="https://www.linkedin.com/in/owen-maake-0b715a3a3/"><img src="icons/Designbolts-Ios8-Style-Social-Linkedin.32.png" alt=""></a>
+                <h6>Linkedin</h6>
+            </div>
+            <div class="links-item">
+                <a href=""><img src="icons/Tinylab-Android-Lollipop-Apps-Whatsapp.32.png" alt=""></a>
+                <h6>Whatsapp</h6>
+
+            </div>
+                <div class="links-item">
+                <a href="https://github.com/owen23-ux"><img src="icons/Papirus-Team-Papirus-Apps-Github.32.png" alt=""></a>
+                <h6>GitHub</h6>
+            </div>
+        </div>
+        <br>
+    <footer>
+        &copy; 2026.All Rights Reserved|<a href="">|DESIGNED BY: Owen Maake</a>
+    </footer>
+    </section>
+        <!-- JavaScript for smooth scrolling -->
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Hire Me button functionality
+        document.querySelector('button[onclick*="mailto"]').addEventListener('click', function() {
+            alert('Opening email client to contact Owen...');
+        });
+        
+        // CV Download button functionality
+        document.querySelector('button[onclick*="cv.pdf"]').addEventListener('click', function() {
+            alert('Downloading CV... If download doesn\'t start, check the file path.');
+        });
+    </script>
+</body>
+</html>
