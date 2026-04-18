@@ -3,155 +3,328 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Owen Maake | Full Stack Developer & Cybersecurity Analyst</title>
     <link rel="stylesheet" href="home.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <section class="header">
         <nav>
-            <a href="home.html"><img src="images/Gemini_Generated_Image_4v5fql4v5fql4v5f-removebg-preview.png" alt="Logo"></a>
+            <a href="home.html" class="logo">
+                <img src="images/Gemini_Generated_Image_4v5fql4v5fql4v5f-removebg-preview.png" alt="Logo">
+                <span class="logo-text">O.M</span>
+            </a>
             <div class="nav-links">
                 <ul>
-                    <li><a href="#">Owen Maake</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
             </div>
         </nav>
 
         <div class="intro">
-            <span>Hi there</span><br>
-            <span>I am Owen Maake</span><br>
-            <span>A junior Full Stack Web Developer</span>
+            <span class="greeting">👋 Hi there</span>
+            <span class="name">I'm <span class="highlight">Owen Maake</span></span>
+            <span class="title">Full Stack Developer & Cybersecurity Analyst</span>
+            <div class="typed-container">
+                <span class="typed-text"></span>
+                <span class="cursor">|</span>
+            </div>
         </div>
-        <br>
+
         <div class="hire">
-            <button onclick="location.href='mailto:owenlethabo28@gmail.com';">Hire Me </button>
-            <button onclick="location.href='cv/cv.pdf';">Download CV </button>
+            <button class="btn-primary" onclick="location.href='mailto:owenlethabo28@gmail.com';">
+                <i class="fas fa-envelope"></i> Hire Me
+            </button>
+            <button class="btn-secondary" onclick="location.href='cv/cv.pdf';">
+                <i class="fas fa-download"></i> Download CV
+            </button>
         </div>
-        <br>
 
-        <div class="about">
-            <span><a href="">About Me</a></span>
-            <h5>A highly motivated and results-driven final-year student in Information Technology and Computer Sciences,
-                awaiting degree conferral. Possesses a strong academic foundation and a proactive mindset, with a deep-seated passion
-                for building robust digital solutions and safeguarding them.
-                My technical focus lies at the intersection of full-stack development and cybersecurity principles, allowing me to engineer 
-                applications with security considerations from the ground up. I am adept at problem-solving across the technology stack, 
-                from designing intuitive front-end interfaces to developing scalable back-end systems and implementing foundational security measures.
-                I am particularly energized by emerging technologies such as cloud-native architectures, AI integration, and blockchain, and continuously 
-                explore their practical applications through personal projects and coursework. Eager to contribute my technical skills in IT security, web development, 
-                and analytical troubleshooting to a collaborative, innovative team.
-                Ultimately, I am seeking a dynamic role where I can drive meaningful impact, contribute to challenging projects from day one, and accelerate 
-                my professional growth within a fast-paced technology environment. I am committed to lifelong learning and poised to quickly adapt and add value to your organization.
-            </h5>
+        <div id="about" class="about">
+            <div class="section-header">
+                <span class="section-icon"><i class="fas fa-user-astronaut"></i></span>
+                <span class="section-title">About Me</span>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h5>A highly motivated and results-driven final-year student in Information Technology and Computer Sciences, awaiting degree conferral. Possesses a strong academic foundation and a proactive mindset, with a deep-seated passion for building robust digital solutions and safeguarding them.</h5>
+                    <h5>My technical focus lies at the intersection of <span class="skill-tag">full-stack development</span> and <span class="skill-tag">cybersecurity principles</span>, allowing me to engineer applications with security considerations from the ground up. I am adept at problem-solving across the technology stack, from designing intuitive front-end interfaces to developing scalable back-end systems and implementing foundational security measures.</h5>
+                    <h5>I am particularly energized by emerging technologies such as cloud-native architectures, AI integration, and blockchain, and continuously explore their practical applications through personal projects and coursework. Eager to contribute my technical skills in IT security, web development, and analytical troubleshooting to a collaborative, innovative team.</h5>
+                    <div class="tech-stack">
+                        <span class="tech-badge"><i class="fab fa-python"></i> Python</span>
+                        <span class="tech-badge"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="tech-badge"><i class="fab fa-react"></i> React</span>
+                        <span class="tech-badge"><i class="fab fa-node"></i> Node.js</span>
+                        <span class="tech-badge"><i class="fas fa-database"></i> SQL</span>
+                        <span class="tech-badge"><i class="fab fa-docker"></i> Docker</span>
+                        <span class="tech-badge"><i class="fab fa-aws"></i> AWS/Azure</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <br>
-        <div class="certificates">
-            <span style="width: 100%;"><a href="">Certificates</a></span><br>
-            <br>
+
+        <div id="certificates" class="certificates">
+            <div class="section-header">
+                <span class="section-icon"><i class="fas fa-certificate"></i></span>
+                <span class="section-title">Certifications</span>
+                <div class="section-line"></div>
+            </div>
             
-            <div class="certificate-item">
-                <a onclick="location.href='certificate/_certificate_blackacerecords27-gmail-com_2e23328e-402f-453b-9692-311bc25c2d33-1.pdf';"><img src="images/certificates/Gemini_Generated_Image_bzo3lvbzo3lvbzo3.png" alt=""></a>
-                <h6>Introduction to cybersecurity</h6>
-            </div>
+            <div class="certificates-grid">
+                <div class="certificate-item">
+                    <a onclick="location.href='certificate/_certificate_blackacerecords27-gmail-com_2e23328e-402f-453b-9692-311bc25c2d33-1.pdf';">
+                        <img src="images/certificates/Gemini_Generated_Image_bzo3lvbzo3lvbzo3.png" alt="Cybersecurity">
+                        <div class="cert-overlay">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </a>
+                    <h6>Introduction to Cybersecurity</h6>
+                    <span class="cert-issuer">Cisco</span>
+                </div>
 
-            <div class="certificate-item">
-                <a onclick="location.href='certificate/Endpoint_Security_certificate_blackacerecords27-gmail-com_827da81b-dfd1-4d1a-8d1e-2532812c751a-1.pdf';"><img src="images/certificates/endpoint-security.png" alt=""></a>
-                <h6>Cisco Endpoint Security</h6>
-            </div> 
+                <div class="certificate-item">
+                    <a onclick="location.href='certificate/Endpoint_Security_certificate_blackacerecords27-gmail-com_827da81b-dfd1-4d1a-8d1e-2532812c751a-1.pdf';">
+                        <img src="images/certificates/endpoint-security.png" alt="Endpoint Security">
+                        <div class="cert-overlay">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </a>
+                    <h6>Cisco Endpoint Security</h6>
+                    <span class="cert-issuer">Cisco</span>
+                </div>
 
-            <div class="certificate-item">
-            <a onclick="location.href='certificate/Ethical_Hacker_certificate_blackacerecords27-gmail-com_f51134ca-894a-4dbf-8bc2-a83104bdeeeb-1.pdf';"><img src="images/certificates/Gemini_Generated_Image_dxrwj9dxrwj9dxrw.png" alt=""></a>
-                <h6>Cisco Ethical Hacker</h6>
-            </div> 
+                <div class="certificate-item">
+                    <a onclick="location.href='certificate/Ethical_Hacker_certificate_blackacerecords27-gmail-com_f51134ca-894a-4dbf-8bc2-a83104bdeeeb-1.pdf';">
+                        <img src="images/certificates/Gemini_Generated_Image_dxrwj9dxrwj9dxrw.png" alt="Ethical Hacker">
+                        <div class="cert-overlay">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </a>
+                    <h6>Cisco Ethical Hacker</h6>
+                    <span class="cert-issuer">Cisco</span>
+                </div>
 
-            <div class="certificate-item">
-                <a onclick="location.href='certificate/Owen-2-6877773A1B44A-2025-07-16-11-56-10.pdf';"><img src="images/certificates/Gemini_Generated_Image_mkkwcpmkkwcpmkkw.png" alt=""></a>
-                <h6>FNB App Academy Full-Stack Dev</h6>
+                <div class="certificate-item">
+                    <a onclick="location.href='certificate/Owen-2-6877773A1B44A-2025-07-16-11-56-10.pdf';">
+                        <img src="images/certificates/Gemini_Generated_Image_mkkwcpmkkwcpmkkw.png" alt="Full-Stack Dev">
+                        <div class="cert-overlay">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </a>
+                    <h6>FNB App Academy Full-Stack Dev</h6>
+                    <span class="cert-issuer">FNB</span>
+                </div>
+
+                <!-- NEW: AZ-900 Azure Fundamentals Certificate -->
+                <div class="certificate-item">
+                    <a onclick="location.href='certificate/AZ900_Azure_Fundamentals.pdf';">
+                        <img src="images/certificates/azure-fundamentals.png" alt="Azure Fundamentals">
+                        <div class="cert-overlay">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </a>
+                    <h6>Microsoft Azure Fundamentals (AZ-900)</h6>
+                    <span class="cert-issuer">Microsoft</span>
+                    <div class="cert-badge">
+                        <i class="fab fa-microsoft"></i> Cloud Certified
+                    </div>
+                </div>
             </div>
         </div>
-        <br>
-        
-        <div class="projects">
-            <span style="width: 100%;"><a href="">Projects</a></span>
-            <br>
-            <div class="projects-item">
-                <a href="https://owen23-ux.github.io/First-calculator/"><img src="images/projects/recha-oktaviani-h2aDKwigQeA-unsplash.jpg" alt=""></a>
-                <h6>Calculator App</h6>
+
+        <div id="projects" class="projects">
+            <div class="section-header">
+                <span class="section-icon"><i class="fas fa-code-branch"></i></span>
+                <span class="section-title">Featured Projects</span>
+                <div class="section-line"></div>
             </div>
-             <div class="projects-item">
-                <a href="https://owen23-ux.github.io/WeatherApp/"><img src="images/projects/abid-shah-sff8Ow-YiWY-unsplash.jpg" alt=""></a>
-                <h6>Weather App</h6>
+            <div class="projects-grid">
+                <div class="projects-item">
+                    <a href="https://owen23-ux.github.io/First-calculator/">
+                        <img src="images/projects/recha-oktaviani-h2aDKwigQeA-unsplash.jpg" alt="Calculator">
+                        <div class="project-overlay">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </a>
+                    <h6>Calculator App</h6>
+                    <span class="project-tech">JavaScript | HTML5 | CSS3</span>
+                </div>
+                <div class="projects-item">
+                    <a href="https://owen23-ux.github.io/WeatherApp/">
+                        <img src="images/projects/abid-shah-sff8Ow-YiWY-unsplash.jpg" alt="Weather App">
+                        <div class="project-overlay">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </a>
+                    <h6>Weather App</h6>
+                    <span class="project-tech">API | JavaScript | CSS</span>
+                </div>
+                <div class="projects-item">
+                    <a href="#">
+                        <img src="images/projects/souvik-banerjee-E6Yg8ACZ2vw-unsplash.jpg" alt="Instagram Clone">
+                        <div class="project-overlay">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </a>
+                    <h6><del>Instagram Clone</del></h6>
+                    <span class="project-tech status-pending">Coming Soon</span>
+                </div>
+                <div class="projects-item">
+                    <a href="#">
+                        <img src="images/projects/dima-solomin-sOU09hnONrQ-unsplash.jpg" alt="Netflix Clone">
+                        <div class="project-overlay">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </a>
+                    <h6><del>Netflix Clone</del></h6>
+                    <span class="project-tech status-pending">Coming Soon</span>
+                </div>
             </div>
-             <div class="projects-item">
-                <a href=""><img src="images/projects/souvik-banerjee-E6Yg8ACZ2vw-unsplash.jpg" alt=""></a>
-                <h6><del>Instagram Clone</del></h6>
-            </div>  
-             <div class="projects-item">
-                <a href=""><img src="images/projects/dima-solomin-sOU09hnONrQ-unsplash.jpg" alt=""></a>
-                <h6><del>Netflix Clone</del></h6>
-            </div>          
         </div>
 
-         <br>
-        <div class="links">
-            <span style="width: 100%;"><a href="">Social's</a></span><br>
-
-            <div class="links-item">
-                <a href="https://www.linkedin.com/in/owen-maake-0b715a3a3/"><img src="icons/Designbolts-Ios8-Style-Social-Linkedin.32.png" alt=""></a>
-                <h6>Linkedin</h6>
+        <div id="contact" class="links">
+            <div class="section-header">
+                <span class="section-icon"><i class="fas fa-address-card"></i></span>
+                <span class="section-title">Connect With Me</span>
+                <div class="section-line"></div>
             </div>
-            <div class="links-item">
-                <a href=""><img src="icons/Tinylab-Android-Lollipop-Apps-Whatsapp.32.png" alt=""></a>
-                <h6>Whatsapp</h6>
-
-            </div>
+            <div class="links-grid">
                 <div class="links-item">
-                <a href="https://github.com/owen23-ux"><img src="icons/Papirus-Team-Papirus-Apps-Github.32.png" alt=""></a>
-                <h6>GitHub</h6>
+                    <a href="https://www.linkedin.com/in/owen-maake-0b715a3a3/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <h6>LinkedIn</h6>
+                </div>
+                <div class="links-item">
+                    <a href="https://github.com/owen23-ux" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <h6>GitHub</h6>
+                </div>
+                <div class="links-item">
+                    <a href="mailto:owenlethabo28@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <h6>Email</h6>
+                </div>
+                <div class="links-item">
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <h6>Twitter/X</h6>
+                </div>
             </div>
         </div>
-        <br>
-    <footer>
-        &copy; 2026.All Rights Reserved||DESIGNED BY: <a href="https://github.com/owen23-ux">Owen Maake</a>
-    </footer>
+
+        <footer>
+            <p>&copy; 2026 Owen Maake. All Rights Reserved.</p>
+            <p>Designed with <i class="fas fa-heart" style="color: #ff6b6b;"></i> by Owen Maake</p>
+        </footer>
     </section>
-        <!-- JavaScript for smooth scrolling -->
+
     <script>
-        // Smooth scrolling for anchor links
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+
+        // Typed text effect
+        const typedTextSpan = document.querySelector('.typed-text');
+        const cursorSpan = document.querySelector('.cursor');
+        
+        const textArray = ['Full Stack Developer', 'Cybersecurity Analyst', 'Cloud Enthusiast', 'Problem Solver'];
+        const typingDelay = 100;
+        const erasingDelay = 50;
+        const newTextDelay = 2000;
+        let textArrayIndex = 0;
+        let charIndex = 0;
+        
+        function type() {
+            if (charIndex < textArray[textArrayIndex].length) {
+                if (!cursorSpan.classList.contains('typing')) cursorSpan.classList.add('typing');
+                typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+                charIndex++;
+                setTimeout(type, typingDelay);
+            } else {
+                cursorSpan.classList.remove('typing');
+                setTimeout(erase, newTextDelay);
+            }
+        }
+        
+        function erase() {
+            if (charIndex > 0) {
+                if (!cursorSpan.classList.contains('typing')) cursorSpan.classList.add('typing');
+                typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(erase, erasingDelay);
+            } else {
+                cursorSpan.classList.remove('typing');
+                textArrayIndex++;
+                if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+                setTimeout(type, typingDelay + 1100);
+            }
+        }
+        
+        if (textArray.length) setTimeout(type, newTextDelay + 250);
+
+        // Smooth scrolling for navigation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
                 const targetId = this.getAttribute('href');
-                if(targetId === '#') return;
-                
+                if (targetId === '#') return;
                 const targetElement = document.querySelector(targetId);
-                if(targetElement) {
+                if (targetElement) {
                     window.scrollTo({
                         top: targetElement.offsetTop - 80,
                         behavior: 'smooth'
                     });
+                    navLinks.classList.remove('active');
                 }
             });
         });
+
+        // Scroll reveal animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
         
-        // Hire Me button functionality
-        document.querySelector('button[onclick*="mailto"]').addEventListener('click', function() {
-            alert('Opening email client to contact Owen...');
-        });
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
         
-        // CV Download button functionality
-        document.querySelector('button[onclick*="cv.pdf"]').addEventListener('click', function() {
-            alert('Downloading CV... If download doesn\'t start, check the file path.');
+        document.querySelectorAll('.certificate-item, .projects-item, .links-item').forEach(el => {
+            observer.observe(el);
         });
+
+        // Hire Me button alert
+        const hireBtn = document.querySelector('.btn-primary');
+        if (hireBtn) {
+            hireBtn.addEventListener('click', function() {
+                console.log('Opening email client...');
+            });
+        }
     </script>
 </body>
-
 </html>
-
-
-
